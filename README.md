@@ -3,7 +3,7 @@
 ## Table of contents
 * [Project Goals](#project-goals)
 * [Built with](#built-with)
-* [How to use](#how-to-play)
+* [How to use](#how-to-use)
 * [Challenges and Credits](#challenges-and-credits)
 
 ## Project Goals
