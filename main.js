@@ -1,12 +1,15 @@
 // Define future kids message parts in object
 const futureKidsObject = {
     number: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-    gender: ['Male ♂', 'Female ♀', 'Male ♂/Female ♀'],
+    gender: ['Male ♂', 'Female ♀'],
     iqLevel: ['85-114', '115-129', '115-129', '130-144', '145-159']
 };
 
 // Store the 'future kids' in an array
 let futureKidsArray = [];
+
+// Store number of kids, gender
+let totalKids, kidsGender, prefix;
 
 // Iterate over the object
 for (let prop in futureKidsObject) {
@@ -14,13 +17,23 @@ for (let prop in futureKidsObject) {
     // use the object's properties to customize the message being added to futureKidsArray
     switch (prop) {
         case 'number':
-            futureKidsArray.push(`You will have ${futureKidsObject[prop][randomIndex]} kid(s) in the future.`);
+            totalKids = futureKidsObject[prop][randomIndex];
+            futureKidsArray.push(`You will have ${totalKids} kid(s) in the future.`);
             break;
         case 'gender':
-            futureKidsArray.push(`Your future kid(s) gender will be ${futureKidsObject[prop][randomIndex]}.`);
+            kidsGender = futureKidsObject[prop][randomIndex];
+            futureKidsArray.push(`Your future kid(s) gender will be ${kidsGender}.`);
             break;
         case 'iqLevel':
-            futureKidsArray.push(`(their-his-her) IQ levels will be between ${futureKidsObject[prop][randomIndex]}.`);
+            if (totalKids == 1) {
+                if (kidsGender.includes('Male'))
+                    prefix = 'His';
+                else
+                    prefix = 'Her';
+            } else {
+                prefix = 'Their';
+            }
+            futureKidsArray.push(`${prefix} IQ levels will be between ${futureKidsObject[prop][randomIndex]}.`);
             break;
     }
 }
