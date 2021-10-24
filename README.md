@@ -17,9 +17,9 @@
 3. **My Project**
     * My project aims to predict your future number of kids along with Gender and IQ level.
 4. **Output Example**
-   * You will have 4 kid(s) in the future.
-   * Your future kid(s) gender will be Female ♀.
-   * Their IQ levels will be between 115-129.
+    * You will have 4 kid(s) in the future.
+    * Your future kid(s) gender will be Female ♀.
+    * Their IQ levels will be between 115-129.
 
 ## Built with
 * JavaScript
