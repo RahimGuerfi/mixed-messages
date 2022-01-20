@@ -15,7 +15,7 @@
     * Use command line
     * Develop locally on your computer
 3. **My Project**
-    * My project aims to predict your future number of kids along with Gender and IQ level.
+    * My [project](https://replit.com/@abderrahimguerf/mixed-messages#main.js) aims to predict your future number of kids along with Gender and IQ level.
 4. **Output Example**
     * You will have 4 kid(s) in the future.
     * Your future kid(s) gender will be Female ♀.
